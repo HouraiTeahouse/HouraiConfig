@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace HouraiTeahouse.Config {
+namespace HouraiTeahouse {
 
 public class ConfigLoader : MonoBehaviour {
 
