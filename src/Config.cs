@@ -2,6 +2,10 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Object = UnityEngine.Object;
+#if UNITY_EDITOR
+using UnityEditor;
+using System.Linq;
+#endif
 
 namespace HouraiTeahouse {
 
@@ -18,9 +22,18 @@ public static class Config {
   }
 
   public static T Get<T>() where T : ScriptableObject {
-    ScriptableObject config;
+    ScriptableObject config = null;
     if (!configs.TryGetValue(typeof(T), out config)) {
+#if UNITY_EDITOR
+      if (!EditorApplication.isPlayingOrWillChangePlaymode) {
+        config = EditorAssetUtil.LoadAll<T>().FirstOrDefault();
+      }
+      if (config == null) {
+        config = ScriptableObject.CreateInstance<T>();
+      }
+#else
       config = ScriptableObject.CreateInstance<T>();
+#endif
       configs[typeof(T)] = config;
     }
     return config as T;
