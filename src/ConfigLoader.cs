@@ -6,6 +6,9 @@ public class ConfigLoader : MonoBehaviour {
 
   public ScriptableObject[] Configs;
 
+  /// <summary>
+  /// Awake is called when the script instance is being loaded.
+  /// </summary>
   void Awake() {
     foreach (var config in Configs) {
       if (config == null) continue;

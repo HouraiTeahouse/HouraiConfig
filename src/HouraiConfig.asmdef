@@ -1,3 +1,8 @@
-﻿{
-	"name": "HouraiConfig"
+{
+    "name": "HouraiConfig",
+    "references": [
+        "HouraiCore"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
 }
