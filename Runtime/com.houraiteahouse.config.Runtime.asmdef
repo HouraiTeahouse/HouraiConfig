@@ -1,0 +1,8 @@
+{
+    "name": "com.houraiteahouse.config.Runtime",
+    "references": [
+        "com.houraiteahouse.core.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

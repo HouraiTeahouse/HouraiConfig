@@ -1,8 +1,0 @@
-{
-    "name": "HouraiConfig",
-    "references": [
-        "HouraiCore"
-    ],
-    "includePlatforms": [],
-    "excludePlatforms": []
-}
