@@ -2,6 +2,12 @@
   "author": "Hourai Teahouse",
   "name": "com.houraiteahouse.config",
   "displayName": "Hourai Config",
-  "version": "0.0.1",
-  "description": "Simplified Game Configuration management"
+  "version": "1.0.0",
+  "description": "Simplified Game Configuration management",
+  "homepage": "https://github.com/HouraiTeahouse/HouraiConfig",
+  "bugs": "https://github.com/HouraiTeahouse/HouraiConfig/issues",
+  "repository": "github:HouraiTeahouse/HouraiConfig",
+  "publishConfig": {
+    "registry": "https://upm.houraiteahouse.net"
+  }
 }
